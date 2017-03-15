@@ -25,7 +25,7 @@ var feedTweets = [
 // };
 
 $(document).ready(function() {
-  refreshAndPopulateFeed();
+  // refreshAndPopulateFeed();
   $('#new-tweet').submit(function(event) {
     event.preventDefault();
     postTweet($(event.target).children('textarea').val());
