@@ -1,24 +1,28 @@
 {
 	"feed": [
 		{
+			"user": "blah",
+			"tweet": "hello"
+		},
+		{
 			"user": "anotheruser17",
-			"date": "11/23/16 14:23",
-			"tweet": "This is another sample tweet #letsgo #wegotthis"
+			"tweet": "This is another sample tweet #letsgo #wegotthis",
+			"date": "11/23/16 14:23"
 		},
 		{
 			"user": "someoneelse23",
-			"date": "11/22/16 12:03",
-			"tweet": "Favorite time of day! #blessed"
+			"tweet": "Favorite time of day! #blessed",
+			"date": "11/22/16 12:03"
 		},
 		{
 			"user": "mickey",
-			"date": "11/21/16 00:19",
-			"tweet": "Sample sample tweet sample sample sample. These can be up to 140 characters?"
+			"tweet": "Sample sample tweet sample sample sample. These can be up to 140 characters?",
+			"date": "11/21/16 00:19"
 		},
 		{
 			"user": "anotheruser17",
-			"date": "11/20/16 21:23",
-			"tweet": "First tweet! #wootwoot"
+			"tweet": "First tweet! #wootwoot",
+			"date": "11/20/16 21:23"
 		}
 	]
 }
