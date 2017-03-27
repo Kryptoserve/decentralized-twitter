@@ -1,6 +1,11 @@
 {
 	"feed": [
 		{
+			"user": "ashays",
+			"date": "3/27/17 14:34",
+			"tweet": "still not in the compose area"
+		},
+		{
 			"user": "person",
 			"tweet": "what happens on a new tweet?"
 		},
@@ -10,23 +15,23 @@
 		},
 		{
 			"user": "anotheruser17",
-			"tweet": "This is another sample tweet #letsgo #wegotthis",
-			"date": "11/23/16 14:23"
+			"date": "11/23/16 14:23",
+			"tweet": "This is another sample tweet #letsgo #wegotthis"
 		},
 		{
 			"user": "someoneelse23",
-			"tweet": "Favorite time of day! #blessed",
-			"date": "11/22/16 12:03"
+			"date": "11/22/16 12:03",
+			"tweet": "Favorite time of day! #blessed"
 		},
 		{
 			"user": "mickey",
-			"tweet": "Sample sample tweet sample sample sample. These can be up to 140 characters?",
-			"date": "11/21/16 00:19"
+			"date": "11/21/16 00:19",
+			"tweet": "Sample sample tweet sample sample sample. These can be up to 140 characters?"
 		},
 		{
 			"user": "anotheruser17",
-			"tweet": "First tweet! #wootwoot",
-			"date": "11/20/16 21:23"
+			"date": "11/20/16 21:23",
+			"tweet": "First tweet! #wootwoot"
 		}
 	]
 }
