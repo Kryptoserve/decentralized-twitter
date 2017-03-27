@@ -1,6 +1,9 @@
 {
 	"feed": [
-		{},
+		{
+			"user": "person",
+			"tweet": "what happens on a new tweet?"
+		},
 		{
 			"user": "blah",
 			"tweet": "blah"
