@@ -2,6 +2,11 @@
 	"feed": [
 		{
 			"user": "ashays",
+			"date": "2017-03-29",
+			"tweet": "first message from main area!"
+		},
+		{
+			"user": "ashays",
 			"date": "3/27/17 14:34",
 			"tweet": "still not in the compose areaa"
 		},
