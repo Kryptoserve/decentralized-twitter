@@ -2171,9 +2171,14 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
 				var o = arguments.length <= 2 || arguments[2] === undefined ? {} : arguments[2];
 
 				if (Mavo.is("multiple", element) && !o.collection) {
-					// console.log(element);
-					twitter = new Mavo.Collection(element, mavo, o);
-					return twitter;
+					var newColl;
+					if (element.id == "tweet") {
+						twitter = new Mavo.Collection(element, mavo, o);
+						newColl = twitter;
+					} else {
+						newColl = new Mavo.Collection(element, mavo, o);
+					}
+					return newColl;
 				}
 
 				return new Mavo[Mavo.is("group", element) ? "Group" : "Primitive"](element, mavo, o);

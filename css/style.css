@@ -5,6 +5,10 @@
 	-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
 }
 
+.mv-ui {
+    display: none !important;
+}
+
 .tweet-compose {
     background: #eee;
     padding: 20px;
@@ -49,4 +53,9 @@
 
 .tweet .tweet-pseudo {
     text-decoration: underline;
+}
+
+.panel {
+    margin: 10px 0;
+    box-shadow: none;
 }

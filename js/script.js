@@ -11,16 +11,13 @@ $(document).ready(function() {
 function postTweet(tweet) {
   var newTweet = {
     user: "ashays",
-    date: new Date().toJSON().slice(0,10),
+    date: new Date().toJSON(),
     tweet: tweet
   };
   addToFeed(newTweet);
-  // feedTweets.unshift(newTweet);
-  //feedTweets.unshift(newTweet);
 }
 
 function addToFeed(tweet) {
-  // $('.feed').prepend('<div class="tweet" mv-multiple property="feed" mv-order="desc" typeof="Item"><span class="tweet-pseudo">@' + tweet['user'] + ' </span><span class="tweet-date">' + tweet['date'] + '</span><span class="tweet-message">' + tweet['tweet'] + '</span></div>');
   twitter.add();
   $($('.tweet .tweet-pseudo')[0]).text(tweet.user);
   $($('.tweet .tweet-date')[0]).text(tweet.date);

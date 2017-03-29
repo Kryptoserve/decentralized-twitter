@@ -14,7 +14,7 @@
       <div class="col-md-2"></div>
       <div class="col-md-8">
         <h1>Decentralized Twitter</h1>
-        <p class="lead">Tweets are stored on your personal GitHub</p>
+        <p class="lead">Your feed and tweets are stored on your personal GitHub.</p>
         <div class="tweet-compose">
           <span class="tweet-pseudo">@ashays</span>
           <form id="new-tweet">
@@ -23,15 +23,22 @@
           </form>
         </div>
         <div class="feed">
-          <div class="tweet" mv-multiple property="tweet" mv-order="desc" typeof="Item">
+          <div class="tweet" mv-multiple property="tweet" mv-order="desc" typeof="Item" id="tweet">
             <span class="tweet-pseudo" property="user">@sample</span>
             <span class="tweet-date" property="date">11/23/16 14:23</span>
             <span class="tweet-message" property="tweet">The tweet content</span>
           </div>
         </div>
       </div>
-      <div class="col-md-2"></div>
-    </div> 
+      <div class="col-md-2">
+        <div class="panel">
+          <h3>Following</h3>
+          <ul class="list-group">
+            <li class="list-group-item" mv-multiple property="following" mv-order="desc"></li>
+          </ul>
+        </div>
+      </div>
+    </div>
     <script src="js/mavo.es5.js"></script>
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/script.js"></script>
