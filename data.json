@@ -1,24 +1,3 @@
 {
-	"feed": [
-		{
-			"user": "anotheruser17",
-			"date": "11/23/16 14:23",
-			"tweet": "This is another sample tweet #letsgo #wegotthis"
-		},
-		{
-			"user": "someoneelse23",
-			"date": "11/22/16 12:03",
-			"tweet": "Favorite time of day! #blessed"
-		},
-		{
-			"user": "mickey",
-			"date": "11/21/16 00:19",
-			"tweet": "Sample sample tweet sample sample sample. These can be up to 140 characters?"
-		},
-		{
-			"user": "anotheruser17",
-			"date": "11/20/16 21:23",
-			"tweet": "First tweet! #wootwoot"
-		}
-	]
+	"tweet": []
 }
