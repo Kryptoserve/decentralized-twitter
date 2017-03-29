@@ -1,35 +1,8 @@
-var me = {
-  name: "sampleuser",
-  following: ["anotheruser17", "someoneelse23", "example-other-user", "mickey"],
-  //feed: feedTweets
-};
-
-var feedTweets = [
-  {user: "anotheruser17", date: "11/23/16 14:23", tweet: "This is another sample tweet #letsgo #wegotthis"},
-  {user: "someoneelse23", date: "11/22/16 12:03", tweet: "Favorite time of day! #blessed"},
-  {user: "mickey", date: "11/21/16 00:19", tweet: "Sample sample tweet sample sample sample. These can be up to 140 characters?"},
-  {user: "anotheruser17", date: "11/20/16 21:23", tweet: "First tweet! #wootwoot"}
-];
-
-
-// var feedTweetsOther = [
-//   {user: "mickey", date: "11/21/16 00:19", tweet: "Sample sample tweet sample sample sample. These can be up to 140 characters?"},
-//   {user: "example-other-user", date: "11/20/16 00:19", tweet: "Tweet from example-other-user"}
-
-// ];
-
-// var other = {
-//   name: "example-other-user",
-//   following: ["mickey"],
-//   //feed: feedTweetsOther
-// };
-
 $(document).ready(function() {
-  // refreshAndPopulateFeed();
   $('#new-tweet').submit(function(event) {
     event.preventDefault();
     postTweet($(event.target).children('textarea').val());
-    refreshAndPopulateFeed();
+    // refreshAndPopulateFeed();
     $(event.target).children('textarea').val("");
   });
 });
@@ -37,14 +10,28 @@ $(document).ready(function() {
 // Store tweet somewhere
 function postTweet(tweet) {
   var newTweet = {
-    user: me.name,
+    user: "ashays",
     date: new Date().toJSON().slice(0,10),
     tweet: tweet
   };
-  feedTweets.unshift(newTweet);
+  addToFeed(newTweet);
+  // feedTweets.unshift(newTweet);
   //feedTweets.unshift(newTweet);
 }
- // quick array contains method
+
+function addToFeed(tweet) {
+  // $('.feed').prepend('<div class="tweet" mv-multiple property="feed" mv-order="desc" typeof="Item"><span class="tweet-pseudo">@' + tweet['user'] + ' </span><span class="tweet-date">' + tweet['date'] + '</span><span class="tweet-message">' + tweet['tweet'] + '</span></div>');
+  twitter.add();
+  $($('.tweet .tweet-pseudo')[0]).text(tweet.user);
+  $($('.tweet .tweet-date')[0]).text(tweet.date);
+  $($('.tweet .tweet-message')[0]).text(tweet.tweet);
+  twitterMe.save();
+}
+
+
+
+
+// quick array contains method
 Array.prototype.contains = function(obj) {
   var i = this.length;
   while (i--) {

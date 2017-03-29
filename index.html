@@ -13,19 +13,19 @@
     <div class="container" mv-app="decentralized-twitter" mv-storage="https://github.com/ashays/decentralized-twitter/data.json">
       <div class="col-md-2"></div>
       <div class="col-md-8">
-        <h1>Twitter Application</h1>
-        <p class="lead">Sample Twitter-type application that allows posting tweets and exporting a newsfeed of sample tweets.</p>
+        <h1>Decentralized Twitter</h1>
+        <p class="lead">Tweets are stored on your personal GitHub</p>
         <div class="tweet-compose">
-          <span class="tweet-pseudo">@sampleuser</span>
+          <span class="tweet-pseudo">@ashays</span>
           <form id="new-tweet">
-            <textarea placeholder="Compose new tweet"></textarea>
-            <input type="submit" class="btn btn-primary" value="Tweet">
+            <textarea placeholder="Compose new tweet" required></textarea>
+            <input type="submit" class="btn btn-primary" value="Tweet" id="tweet-btn">
           </form>
         </div>
         <div class="feed">
-          <div class="tweet" mv-multiple property="feed" mv-order="desc" typeof="Item">
+          <div class="tweet" mv-multiple property="tweet" mv-order="desc" typeof="Item">
             <span class="tweet-pseudo" property="user">@sample</span>
-            <span class="tweet-date">11/23/16 14:23</span>
+            <span class="tweet-date" property="date">11/23/16 14:23</span>
             <span class="tweet-message" property="tweet">The tweet content</span>
           </div>
         </div>
