@@ -1,3 +1,9 @@
 {
-	"tweet": []
+	"tweet": [
+		{
+			"user": "ashays",
+			"date": "2017-03-29",
+			"tweet": "This is a sample Tweet! Not using any Mavo UI elements!"
+		}
+	]
 }
