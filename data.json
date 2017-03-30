@@ -1,23 +1,23 @@
 {
 	"tweet": [
 		{
-			"user": "ashays",
+			"user": "wthompson40",
 			"date": "2017-03-29T03:05:52.849Z",
 			"tweet": "Trying again to add a tweet!"
 		},
 		{
-			"user": "ashays",
+			"user": "wthompson40",
 			"date": "2017-03-29T02:59:46.627Z",
 			"tweet": "random"
 		},
 		{
-			"user": "ashays",
+			"user": "wthompson40",
 			"date": "2017-03-29",
 			"tweet": "This is a sample Tweet! Not using any Mavo UI elements!"
 		}
 	],
 	"following": [
-		"wthompson40",
+		"ashays",
 		"compsocial"
 	]
 }
