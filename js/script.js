@@ -10,7 +10,7 @@ $(document).ready(function() {
 // Store tweet somewhere
 function postTweet(tweet) {
   var newTweet = {
-    user: "ashays",
+    user: "wthompson40",
     date: new Date().toJSON(),
     tweet: tweet
   };

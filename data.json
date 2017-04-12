@@ -1,33 +1,33 @@
 {
 	"tweet": [
 		{
-			"user": "ashays",
+			"user": "wthompson40",
 			"date": "2017-04-12T20:16:17.226Z",
-			"tweet": "blah"
+			"tweet": "hidden bar"
 		},
 		{
-			"user": "ashays",
+			"user": "wthompson40",
 			"date": "2017-04-12T19:19:14.859Z",
-			"tweet": "Does tweeting still work?"
+			"tweet": "another test"
 		},
 		{
-			"user": "ashays",
+			"user": "wthompson40",
 			"date": "2017-03-29T03:05:52.849Z",
 			"tweet": "Trying again to add a tweet!"
 		},
 		{
-			"user": "ashays",
+			"user": "wthompson40",
 			"date": "2017-03-29T02:59:46.627Z",
-			"tweet": "random"
+			"tweet": "Second tweet"
 		},
 		{
-			"user": "ashays",
+			"user": "wthompson40",
 			"date": "2017-03-29",
-			"tweet": "This is a sample Tweet! Not using any Mavo UI elements!"
+			"tweet": "First Tweet"
 		}
 	],
 	"following": [
-		"wthompson40",
+		"ashays",
 		"compsocial"
 	]
 }
