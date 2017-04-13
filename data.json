@@ -1,6 +1,11 @@
 {
 	"tweet": [
 		{
+			"user": "wthompson40",
+			"date": "2017-04-13T01:12:42.413Z",
+			"tweet": "test after retrieving other repos tweets"
+		},
+		{
 			"user": "ashays",
 			"date": "2017-03-29",
 			"tweet": "This is a sample Tweet! Not using any Mavo UI elements!"
