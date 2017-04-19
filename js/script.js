@@ -1,19 +1,29 @@
 $(document).ready(function() {
+  fetchFollowersFromGithub(iAmGlobal.following[0]);
+  //postTweet("ASHAY", "TWEET", new Date().toJSON());
   $('#new-tweet').submit(function(event) {
     event.preventDefault();
-    postTweet($(event.target).children('textarea').val());
+    postTweet(iAmGlobal.username,$(event.target).children('textarea').val(), new Date().toJSON());
+
     // refreshAndPopulateFeed();
     $(event.target).children('textarea').val("");
   });
 });
 
+
+var iAmGlobal = {
+  username: "wthompson40",
+  following: ["ashays"]
+};
+
 // Store tweet somewhere
-function postTweet(tweet) {
+function postTweet(user, tweet, date) {
   var newTweet = {
-    user: "wthompson40",
-    date: new Date().toJSON(),
+    user: user,
+    date: date,
     tweet: tweet
   };
+  //console.log(newTweet);
   addToFeed(newTweet);
 }
 
@@ -24,6 +34,36 @@ function addToFeed(tweet) {
   $($('.tweet .tweet-message')[0]).text(tweet.tweet);
   twitterMe.save();
 }
+
+
+// fetching data.JSON from github repo particular to each user
+function fetchFollowersFromGithub(username) {
+  //for(name in username.following) {
+    var newTweet = {
+      user: "wthompson40",
+      date: new Date().toJSON(),
+      tweet: tweet
+    };
+    tweets = []
+    followingList = []
+    var string = "https://raw.githubusercontent.com/" + username + "/decentralized-twitter/master/data.json";
+    $.getJSON(string, function(data) {
+      $.each(data, function(key, val) {
+        if (key == "following") {
+          followingList.push(val);
+        } else if (key == "tweet") {
+          for (var i = 0; i < val.length; i++) {
+            currentTweet = val[i];
+            postTweet(currentTweet.user, currentTweet.tweet, currentTweet.date);
+            console.log(currentTweet.user +  currentTweet.tweet + currentTweet.date);
+          };
+        };
+        // items.push()
+      });
+
+    });
+  //};
+};
 
 
 
