@@ -2,36 +2,6 @@
 	"tweet": [
 		{
 			"user": "wthompson40",
-			"date": "2017-04-19T18:28:06.063Z",
-			"tweet": "Tweet after combination of feeds"
-		},
-		{
-			"user": "ashays",
-			"date": "2017-03-29",
-			"tweet": "This is a sample Tweet! Not using any Mavo UI elements!"
-		},
-		{
-			"user": "ashays",
-			"date": "2017-03-29T02:59:46.627Z",
-			"tweet": "random"
-		},
-		{
-			"user": "ashays",
-			"date": "2017-03-29T03:05:52.849Z",
-			"tweet": "Trying again to add a tweet!"
-		},
-		{
-			"user": "ashays",
-			"date": "2017-04-12T19:19:14.859Z",
-			"tweet": "Does tweeting still work?"
-		},
-		{
-			"user": "ashays",
-			"date": "2017-04-12T20:16:17.226Z",
-			"tweet": "blah"
-		},
-		{
-			"user": "wthompson40",
 			"date": "2017-04-13T01:00:32.914Z",
 			"tweet": "test post"
 		},
