@@ -2,6 +2,11 @@
 	"tweet": [
 		{
 			"user": "wthompson40",
+			"date": "2018-10-18T17:57:33.422Z",
+			"tweet": "This is so whack!"
+		},
+		{
+			"user": "wthompson40",
 			"date": "2017-04-13T01:00:32.914Z",
 			"tweet": "test post"
 		},
